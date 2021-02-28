@@ -10,7 +10,7 @@ const server = express()
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 const io = require("socket.io")(server); 
-  
+  console.log(PORT);
 io.on('connection', (socket) => { 
      console.log("New user connected"); 
 });
